@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>しばたゆめのポートフォリオ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+        const menuLinks = document.querySelectorAll('.menu a');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            menu.classList.remove('active');
+            });
+        });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="title-logo">
+                <h1 id="title"><a href="top.html">SHIBATA YUME's</a></h1>
+                <p>Portfolio</p>
+            </div>
+
+             <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="aboutme.html">About me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="work-wrapper">
+            <div class="work-container">
+                <div class="work-title">
+                    <h3>タイトル</h3>
+                    <p>サイトの種類</p>
+                </div>
+
+                <div class="work-details">
+                <div class="detail">
+                    <p>使用ツール</p>
+                    <p>入力</p>
+                </div>
+                <div class="detail">
+                    <p>制作期間</p>
+                    <p>入力</p>
+                </div>
+                <div class="detail">
+                    <p>概要</p>
+                    <p>入力</p>
+                </div>
+                </div>
+
+                <div class="work-image">
+                    <img src="./images/new-works1.png" alt="制作物4">
+                </div>
+
+                <div class="work-details">
+                <div class="work-detail">
+                    <p>目的</p>
+                    <p>入力</p>
+                </div>
+                <div class="work-detail">
+                    <p>ターゲット</p>
+                    <p>入力</p>
+                </div>
+                <div class="work-detail">
+                    <p>デザイン</p>
+                    <p>入力</p>
+                </div>
+                <div class="work-detail">
+                    <p>サイトURL</p>
+                    <a href="#"></a>
+                </div>             
+            </div>
+        </div>
+        </div>
+
+        <div class="contact-wrapper">
+            <a class="btn contact" href="./contact.html">
+                <h5>CONTACT</h5>
+                <p>お問い合わせはこちらから</p>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>ⓒYUME SHIBATA Portfolio</p>
+    </footer>
+</body>
+
+</html>

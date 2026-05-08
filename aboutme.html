@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>しばたゆめのポートフォリオ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+        const menuLinks = document.querySelectorAll('.menu a');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            menu.classList.remove('active');
+            });
+        });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="title-logo">
+                <h1 id="title"><a href="index.html">SHIBATA YUME's</a></h1>
+                <p>Portfolio</p>
+            </div>
+
+             <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Top</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+<main>
+        
+    <div class="aboutme-wrapper-a">
+
+        <div class="subtitle-a">
+            <h3>About me</h3>
+            <p class="jp">わたしについて</p>
+        </div>
+
+        <div class="aboutme-container-a">
+            <div class="aboutme-grid">
+                <div class="photo-main">
+                <img src="./images/me.png" alt="キュランダ鉄道にて">
+            </div>
+
+            <div class="photo-sub">
+                <img src="./images/sea.png" alt="私が訪れたことのある１番きれいな海 ホワイトヘブンビーチ">
+                <img src="./images/coffee.jpg" alt="コーヒーの写真">
+            </div>
+        </div>
+
+        <div class="message">
+            <h6>しばた ゆめ</h6>
+            <p>1998年生まれ兵庫県出身です。教員を退職し、現在はオーストラリアで生活しながら、フリーランスとしてWebデザインの仕事を受け付けています。趣味は海外旅行とコーヒー作りです。学ぶことが好きなのでWebに関する技能も日々磨いています。</p>
+        </div>
+
+    </div>
+</div>
+
+
+        <div class="skill-wrapper">
+            <div class="skill-container">
+                <div class="subtitle-b">
+                    <h3>Skill</h3>
+                    <p>できること</p>
+                </div>
+
+                <img src="./images/skill2.png">
+            </div>
+        </div>
+
+        <div class="career-wrapper">
+            <div class="career-container">
+                <div class="subtitle-c">
+                    <h3>Career</h3>
+                    <p>今までのこと</p>
+                </div>
+
+                <img src="./images/history3.png">
+            </div>
+        </div>
+
+        <div class="strength-wrapper">
+            <div class="strength-container">
+                <div class="subtitle-d">
+                    <h3>Strength</h3>
+                    <p>とくいなこと</p>
+                </div>
+
+                <div class="strength">
+
+                <h3>1. ユーザー視点のロジカルなデザイン</h3>
+                <p>  「誰に、何を、どう伝えるか」という目的を第一に考え、フォントの可読性や視線誘導を意識したデザインを提案します。</p>
+
+                <h3>2. スピード感のある柔軟な対応</h3>
+                <p>  「日本との時差（+1時間)を活かし、迅速なレスポンスと柔軟な修正対応を心がけています。急ぎの案件もお気軽にご相談ください。</p>
+
+                <h3>3. 最後までやり遂げる責任感</h3>
+                <p>  タスマニアでの過酷なファームワークを完遂した経験から、どんな状況でも納期を遵守し、プロジェクトを最後まで責任を持って担当します。</p>
+
+                <h3>4. 英語を活かしたリサーチ</h3>
+                <p>英語でのコミュニケーションや海外サイトでの素材探し・トレンド調査が可能です。グローバルな視点を取り入れた制作に対応します。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-wrapper">
+            <a class="btn contact" href="./contact.html">
+                <h5>CONTACT</h5>
+                <p>お問い合わせはこちらから</p>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>ⓒYUME SHIBATA Portfolio</p>
+    </footer>
+</body>
+
+</html>

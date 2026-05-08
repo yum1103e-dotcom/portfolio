@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>しばたゆめのポートフォリオ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+        const menuLinks = document.querySelectorAll('.menu a');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            menu.classList.remove('active');
+            });
+        });
+        });
+    </script>
+  </head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="title-logo">
+                <h1 id="title"><a href="index.html">SHIBATA YUME's</a></h1>
+                <p>Portfolio</p>
+            </div>
+
+             <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Top</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="aboutme.html">About me</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <div class="contact-wrapper-c">
+            <div class="subtitle-co">
+                <h3>Contact</h3>
+                <p>お問い合わせ</p>
+            </div>
+
+            <div class="contact-container-co">
+                <p>お問い合わせありがとうございます。<br>内容を確認し、３営業日以内にご連絡いたしますので、記載内容をご確認の上、送信ボタンを押してください。</p>
+                
+                <form class="contact-form">
+                    <div class="form-row">
+                        <label for="name">
+                            お名前 <span class="required">*</span>
+                        </label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="name">
+                            フリガナ <span class="required">*</span>
+                        </label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">
+                            メールアドレス<span class="required">*</span>
+                        </label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="tel">TEL</label>
+                        <input type="tel" id="tel" name="tel">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">お問い合わせ内容<span class="required">*</span>
+                        </label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <button type="submit" disabled>送信</button>
+                    </div>
+  
+                </form>
+
+
+
+                    
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>ⓒYUME SHIBATA Portfolio</p>
+    </footer>
+</body>
+
+</html>
