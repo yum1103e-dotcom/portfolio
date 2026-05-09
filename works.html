@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>しばたゆめのポートフォリオ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+        const menuLinks = document.querySelectorAll('.menu a');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            menu.classList.remove('active');
+            });
+        });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="title-logo">
+                <h1 id="title"><a href="index.html">SHIBATA YUME's</a></h1>
+                <p>Portfolio</p>
+            </div>
+
+             <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Top</a></li>
+                    <li><a href="aboutme.html">About me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <div class="works-wrapper-w">
+            <div class="subtitle-w">
+                <h3>Works</h3>
+                <p>実績</p>
+            </div>
+
+            <div class="works-container-w">
+                <div class="works">
+                    <div class="work">
+                        <a href="./work1.html">
+                            <image src="/images/applepie3.png">
+                        </a>
+                        <p>リンゴ農家のアップルパイ宣伝バナー</p>
+                    </div>
+    
+                    <div class="work">
+                        <a href="./work2.html">
+                            <image src="/images/nature.ad.png">
+                        </a>
+                        <p>カレー屋さんのクラフトビール宣伝広告</p>
+                    </div>
+    
+                    <div class="work">
+                        <a href="./work3.html">
+                            <image src="images/cafe1.png">
+                        </a>
+                        <p>北欧風カフェの新作スイーツ宣伝バナー</p>
+                    </div>
+    
+                    <div class="work">
+                        <a href="./work4.html">
+                            <image src="images/cafe2.png">
+                        </a>
+                        <p>静カフェ宣伝バナー</p>
+                    </div>
+    
+                    <div class="work">
+                        <a href="./work5.html">
+                            <image src="images/new-works.png">
+                        </a>
+                        <p>タイトル</p>
+                    </div>
+    
+                    <div class="work">
+                        <a href="./work6.html">
+                            <image src="images/new-works.png">
+                        </a>
+                        <p>タイトル</p>
+                    </div>
+
+                    <div class="work">
+                        <a href="./work7.html">
+                            <image src="images/new-works.png">
+                        </a>
+                        <p>タイトル</p>
+                    </div>
+    
+                    <div class="work">
+                        <a href="./work8.html">
+                            <image src="images/new-works.png">
+                        </a>
+                        <p>タイトル</p>
+                    </div>
+    
+                    <div class="work">
+                        <a href="./work9.html">
+                            <image src="images/new-works.png">
+                        </a>
+                        <p>タイトル</p>
+                    </div>
+    
+                    <div class="work">
+                        <a href="./work10.html">
+                            <image src="images/new-works.png">
+                        </a>
+                        <p>タイトル</p>
+                    </div>
+    
+                    <div class="work">
+                        <a href="./work11.html">
+                            <image src="images/new-works.png">
+                        </a>
+                        <p>タイトル</p>
+                    </div>
+    
+                    <div class="work">
+                        <a href="./work12.html">
+                            <image src="images/new-works.png">
+                        </a>
+                        <p>タイトル</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="contact-wrapper">
+            <a class="btn contact" href="./contact.html">
+                <h5>CONTACT</h5>
+                <p>お問い合わせはこちらから</p>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>ⓒYUME SHIBATA Portfolio</p>
+    </footer>
+</body>
+
+</html>

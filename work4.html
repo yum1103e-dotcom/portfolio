@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>しばたゆめのポートフォリオ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+        const menuLinks = document.querySelectorAll('.menu a');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            menu.classList.remove('active');
+            });
+        });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="title-logo">
+                <h1 id="title"><a href="top.html">SHIBATA YUME's</a></h1>
+                <p>Portfolio</p>
+            </div>
+
+             <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="aboutme.html">About me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="work-wrapper">
+            <div class="work-container">
+                <div class="work-title">
+                    <h3>"静かな一人時間"がコンセプトのカフェの宣伝バナー</h3>
+                    <p>Instagram</p>
+                </div>
+
+                <div class="work-details">
+                <div class="detail">
+                    <p>使用ツール</p>
+                    <p>Canva</p>
+                </div>
+                <div class="detail">
+                    <p>制作期間</p>
+                    <p>1時間</p>
+                </div>
+                <div class="detail">
+                    <p>概要</p>
+                    <p>本作品は、\カフェ＆ライブラリー「KOTONOHA」のブランディングを想定したバナー制作です。"静かなカフェ"をテーマに、練習で制作しました。</p>
+                </div>
+                </div>
+
+                <div class="work-image">
+                    <img src="./images/cafe2.png" alt="静カフェ宣伝バナー">
+                </div>
+
+                <div class="work-details">
+                <div class="work-detail">
+                    <p>目的</p>
+                    <p>カフェの認知拡大と予約促進</p>
+                </div>
+                <div class="work-detail">
+                    <p>ターゲット</p>
+                    <p>20〜30代の働く女性。日々の忙しさから解放され、一人時間やリラックスする時間を求めている層。</p>
+                </div>
+                <div class="work-detail">
+                    <p>デザイン</p>
+                    <p>あえて情報を最小限に削ぎ落とすことで、カフェの根幹である「静寂」や「リラックスした雰囲気」を視覚的に演出しました。また、装飾を排し、余白を大胆に活かすレイアウトにすることで、ターゲットが求めている「日常の喧騒から離れた贅沢な時間」を直感的に感じ取れるデザインを目指しています。</p>
+                </div>
+                <div class="work-detail">
+                    <p>サイトURL</p>
+                    <a href="#"></a>
+                </div>             
+            </div>
+        </div>
+        </div>
+
+        <div class="contact-wrapper">
+            <a class="btn contact" href="./contact.html">
+                <h5>CONTACT</h5>
+                <p>お問い合わせはこちらから</p>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>ⓒYUME SHIBATA Portfolio</p>
+    </footer>
+</body>
+
+</html>
